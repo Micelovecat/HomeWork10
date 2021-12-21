@@ -3,26 +3,26 @@ package ru.skypro;
 import java.util.Objects;
 
 public class Book {
+    private final Author author;
     private final String name;
-    private String author;
     private int yearOfIssie;
 
-    public Book(String name, String author, int yearOfIssie) {
-        this.name = name;
+    public Book(Author author, String name, int yearOfIssie) {
         this.author = author;
+        this.name = name;
         this.yearOfIssie = yearOfIssie;
     }
 
-    public String getName() {
-        return this.name;
+    public Author getAuthor() {
+        return author;
     }
 
-    public String getAuthor() {
-        return String.valueOf(this.author);
+    public String getName() {
+        return name;
     }
 
     public int getYearOfIssie() {
-        return this.yearOfIssie;
+        return yearOfIssie;
     }
 
     public void setYearOfIssie(int yearOfIssie) {
